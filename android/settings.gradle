@@ -1,0 +1,32 @@
+rootProject.name = 'cal'
+include ':react-native-camera'
+project(':react-native-camera').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-camera/android')
+include ':react-native-camera'
+project(':react-native-camera').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-camera/android')
+include ':react-native-alarm-clock'
+project(':react-native-alarm-clock').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-alarm-clock/android')
+include ':react-native-gesture-handler'
+project(':react-native-gesture-handler').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-gesture-handler/android')
+include ':@react-native-voice_voice'
+project(':@react-native-voice_voice').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-voice/voice/android')
+include ':react-native-location'
+project(':react-native-location').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-location/android')
+include ':react-native-location'
+project(':react-native-location').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-location/android')
+include ':react-native-incall-manager'
+project(':react-native-incall-manager').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-incall-manager/android')
+include ':react-native-i18n'
+project(':react-native-i18n').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-i18n/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
+include ':react-native-html-to-pdf'
+project(':react-native-html-to-pdf').projectDir = new File(rootProject.projectDir,'../node_modules/react-native-html-to-pdf/android')
+include ':react-native-push-notification'
+project(':react-native-push-notification').projectDir = file('../node_modules/react-native-push-notification/android')
+includeBuild('../node_modules/react-native-gradle-plugin')
+include ':@react-native-voice_voice', ':app'
+project(':@react-native-voice_voice').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-voice/voice/android')
+if (settings.hasProperty("newArchEnabled") && settings.newArchEnabled == "true") {
+    include(":ReactAndroid")
+    project(":ReactAndroid").projectDir = file('../node_modules/react-native/ReactAndroid')
+}

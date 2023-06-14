@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "858466863474",
+    "project_id": "khatabook-2648a",
+    "storage_bucket": "khatabook-2648a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858466863474:android:fa142af5ad424d2f0df5eb",
+        "android_client_info": {
+          "package_name": "com.cal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858466863474-2mukq48pfvh701m8ecc9bjtghco1jpfa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoxr1oKqk1yMe0CxPr9nGY5A066_1gjeY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858466863474-2mukq48pfvh701m8ecc9bjtghco1jpfa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
